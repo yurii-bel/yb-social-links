@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color1: 0xff4a00,
+          birdSize: 1.2,
+          wingSpan: 3.0,
+          speedLimit: 2.0,
+          separation: 50.0,
+          alignment: 21.0,
+          quantity: 2.0,
+          backgroundAlpha: 0.0,
+        });
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0)";
+        }, 1000);
+      });
+    </script>
+    <title>YB - Social Links</title>
+  </head>
+  <body>
+    <video autoplay muted loop playsinline>
+      <source src="./video/video_bg_clouds.mp4" type="video/mp4" />
+    </video>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <img src="./img/avatar.jpg" />
+        <h1>@okey_nice</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://yuriibeliavtsev.com">
+            <img src="./img/icons8-home.svg" alt="Homepage" width="20" />
+            Official Website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxGfMf3IVD7-kcIMM1POxQ">
+            <img src="./img/icons8-youtube.svg" alt="Youtube" width="20" />
+            Youtube
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/beliavtsev">
+            <img src="./img/icons8-twitter.svg" alt="Twitter" width="20" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yurii-bel">
+            <img src="./img/icons8-github.svg" alt="Github" width="20" />
+            Github
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
